@@ -1,0 +1,118 @@
+* {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.text-field-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.containter-list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: 14s;
+
+}
+
+.tittle {
+    padding-top: 5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whole-body-container {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+    max-height: 110%;
+    min-height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 30%;
+    }
+ 
+    50% {
+        background-position: 90% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.inputfield {
+    height: 60px;
+    width: 260px;
+    border-radius: 15%;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+
+#buttontoDo {
+    padding: 20px;
+    background-color: greenyellow;
+    margin-left: 30px;
+    border-radius: 30%;
+
+
+}
+
+
+
+p {
+    padding: 20px 40px;
+    border-radius: 5%;
+    background-color: transparent;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 5s;
+}
+
+
+.list-p-tags {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(228, 218, 218);
+    padding-left: 10px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.icons-sperete {
+    font-size: 25px;
+}
+
+.list-p-tags:hover {animation: shaking 0.5s;}
+      @keyframes shaking {
+         0% {transform: rotate(0deg);}
+         20% {transform: rotate(-4deg);}
+         50% {transform: rotate(0deg);}
+         70% {transform: rotate(4deg);}
+         100% {transform: rotate(0deg);}
+      }
